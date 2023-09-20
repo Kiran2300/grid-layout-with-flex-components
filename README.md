@@ -1,35 +1,51 @@
-# Instructions
-
-Fork this repository to start working on the assignment.
-
-Here are the base CSS styles to start with.
-
-```css
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+	gap: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+	color: #8c5410;
+  }
+.container {
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	flex-wrap: wrap;
+}
+.card {
+	display: flex;
+    flex-direction: column;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+	margin: 20px auto;
+	max-width: 300px;
+	background-color: #f5f5f5;
+	padding: 20px;
+	text-align: center;
 }
 
 .emoji {
-  border: 1px solid #222;
-  border-radius: 8px;
-  padding: 1rem;
+	font-size: 78px;
+	margin-bottom: 20px;
 }
 
-.emoji h2 {
-  margin: 0;
-  border-bottom: 2px solid #ccc;
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
-.emoji a {
-  text-decoration: none;
-  background-color: #781BAA;
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 0;
 }
-
-.icon {
-  font-size: 4rem;
+.emoji-button {
+	display: inline-block;
+    background-color: #e7b862;
+    color: #56331f;
+    font-size: 20px;
+    padding: 10px 20px;
+    border:#e7b862 
+    cursor: pointer; 
 }
-```
